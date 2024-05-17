@@ -1,0 +1,46 @@
+.chat {
+  flex: 2;
+  scrollbar-width: none;
+}
+.center {
+  scrollbar-width: none;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 20px;
+
+  .message {
+    max-width: 80%;
+    display: flex;
+    .texts {
+      p {
+        background: #dddddd35;
+      }
+    }
+  }
+  .own {
+    max-width: 80%;
+    display: flex;
+    .texts {
+      p {
+        background: rgb(47, 124, 249);
+      }
+    }
+  }
+  .own {
+    align-self: end;
+  }
+}
+button {
+  &:disabled {
+    background: #ff0000;
+    color: #000;
+  }
+  /* input {
+    &:disabled {
+      background: #000000;
+      color: #000;
+    }
+  } */
+}
